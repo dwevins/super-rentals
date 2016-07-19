@@ -1,5 +1,8 @@
 <article class="listing">
-  <h3>{{rental.image}}</h3>
+  <a action='toggleImageSize' class='image {{if isWide 'wide'}}'>
+    <img src='{{rental.image}}'>
+    <small>View Larger</small>
+  </a>
   <div class="detail owner">
     <span>Owner:</span> {{rental.owner}}
   </div>
